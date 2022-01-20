@@ -1,3 +1,6 @@
+// Importálja a scanner-t a java fájlba
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World");
@@ -61,5 +64,15 @@ public class Main {
         System.out.println("A ker-lete: " + (sideA + sideB)*2);
         System.out.println("A ter-lete " + (sideA*sideB));
 
+        // Hello user
+        Scanner input = new Scanner(System.in);
+        System.out.println("Add meg a neved!");
+        String userInput1 = input.nextLine();
+        System.out.println("Hello " + userInput1);
+        System.out.println("Add meg a korod!");
+        String userInput2 = input.nextLine();
+        System.out.println("Korod " + userInput2);
     }
+
+
 }
